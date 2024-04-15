@@ -4,7 +4,7 @@
 
 ## Introducción ##
 
-El club de la tercera edad de Entrepenes, Asturias, te envía la noble tarea de crear un formulario de admisión para su club. Por otro lado, la policía de esa localidad quiere que le fabriques un formulario para el robo temporal de bicicletas. Se sospecha que el club está viviendo una 5ª juventud y está detrás de estas travesuras.
+El club de la tercera edad, Asturias, te envía la noble tarea de crear un formulario de admisión para su club. Por otro lado, la policía de esa localidad quiere que le fabriques un formulario para el robo temporal de bicicletas. Se sospecha que el club está viviendo una 5ª juventud y está detrás de estas travesuras.
 
 ![](abueletes.jpg)
 
