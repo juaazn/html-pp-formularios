@@ -6,6 +6,63 @@
   <title>El club viejuner 👴</title>
 </head>
 <body>
+  <h1>El Club Viejuner</h1>
+  <form action="" method="get" class="form_viejuner">
+    <header><h3>Tu</h3></header>
+    <label for="nombre">Nombre: </label>
+    <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus>
 
+    <label for="apellidos">Apellidos: </label>
+    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido...">
+
+    <label for="edad">Edad: </label>
+    <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad">
+
+    <fieldset>
+      <legend>Sexo: </legend>
+      <input type="radio" name="hombre" id="hombre" value="hombre">
+      <label for="hombre">Hombre</label>
+      <input type="radio" name="mujer" id="mujer" value="mujer">
+      <label for="mujer">Mujer</label>
+    </fieldset>
+
+    <div>
+      <label for="viejuner">Me siento viejuner:</label>
+      <input type="checkbox" name="viejuner" id="viejuner">
+    </div>
+
+    <label for="sobreti">Escribe algo sobre tí:</label>
+    <textarea name="sobreti" id="sobreti" placeholder="Escribenos algo de tí" class="sobreti"></textarea>
+
+    <h3>Tus circunstancias:</h3>
+    <label for="mail">Correo electrónico:</label>
+    <input type="email" name="mail" id="mail" placeholder="Escribe tu correo aquí">
+    
+    <label for="telefono">Teléfono: </label>
+    <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono">
+
+    <input type="submit" value="Enviar">
+  </form>
 </body>
+
+<style>
+  body {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+    align-content: center;
+  }
+  .form_viejuner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .sobreti {
+    resize: vertical;
+    width: auto;
+    min-height: 5.25rem;
+  }
+</style>
 </html>
