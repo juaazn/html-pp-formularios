@@ -7,99 +7,109 @@
 </head>
 <body>
 	<h1>Los ladronzuelos de bicicletas</h1>
+	<img src="https://images.pexels.com/photos/18995683/pexels-photo-18995683/free-photo-of-bicis-pavimento-bicicletas-urbano.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Una persona roba una bicicleta">
 	<form class="form_viejuner" action="" method="get">
-		<label for="fecha">Día: </label>
-		<input type="date" name="fecha" id="fecha" tabindex="0">
+		<fieldset class="fieldset">
+			<legend>Rellenar los datos de tu bicicleta</legend>
+			<label for="fecha">Día: </label>
+			<input type="date" name="fecha" id="fecha" autofocus tabindex="0">
 
-		<label for="hora">Hora:</label>
-		<input type="time" name="hora" id="hora" tabindex="1">
+			<label for="hora">Hora:</label>
+			<input type="time" name="hora" id="hora" tabindex="1">
 
-		<label for="color_bici">Color de la bicicleta:</label>
-		<input type="color" name="color" id="color_bici" tabindex="2">
+			<label for="color_bici">Color de la bicicleta:</label>
+			<input type="color" name="color" id="color_bici" tabindex="2">
 
-		<div>
-			<input type="range" name="rango_precio" id="rango_precio" min="400" max="2000" step="0.5" tabindex="3">
-			<label for="rango_precio">Rango de precio</label>
-		</div>
+			<div>
+				<input type="range" name="rango_precio" id="rango_precio" min="400" max="2000" step="0.5" tabindex="3">
+				<label for="rango_precio">Rango de precio</label>
+			</div>
+		</fieldset>
 
-		<label for="tipo-bici">Tipo de bicicleta:</label tabindex="4">
-		<select name="tipo-bici" id="tipo-bici">
-			<option value="">Escoger</option>
-			<option value="señorial">Señorial</option>
-			<option value="anti-plebeyos">Anti-plebeyos</option>
-			<option value="por-encima-del-hombro">Por encima del hombro</option>
-		</select>
-
-		<label for="montaña">Categoría montaña</label>
-		<select name="montaña" id="montaña" tabindex="5">
-			<option value="">Escoger</option>
-			<option value="gamusinos">gamusinos</option>
-			<option value="hueleflores-premium">Hueleflores premium</option>
-			<option value="fango-lover">Fango lover</option>
-		</select>
-
-		<label for="carreras">Categoría carreras</label>
-		<select name="carreras" id="carreras" tabindex="6">
-			<option value="">Escoger</option>
-			<option value="metroymedio">Metroymedio</option>
-			<option value="3-de-la-tarde-fluorescente edition">3 de la tarde. Fluorescente edition</option>
-			<option value="grupitors">Grupitors</option>
-		</select>
-
-		<label for="accesorios">Accesorios</label>
-		<select name="accesorios" id="accesorios" multiple size="2" tabindex="7">
-			<option value="ruedines">Ruedines</option>
-			<option value="egatinas">Pegatinas</option>
-			<option value="cestita">Cestita</option>
-			<option value="bombo-de-aire">Bombo de aire/option>
-			<option value="timbre">timbre</option>
-			<option value="foco">Foco</option>
-		</select>
-
-		<label for="marca">¿Qué marca era?</label>
-			<select id="marca" name="marca" tabindex="8">
-  			<option value="specialized">Specialized</option>
-  			<option value="trek">Trek</option>
-  			<option value="merida">Merida</option>
-  			<option value="scott">Scott</option>
-  			<option value="giant">Giant</option>
-				<option value="cube">Cube</option>
-  			<option value="lapierre">Lapierre</option>
-  			<option value="orbea">Orbea</option>
-  			<option value="cannondale">Cannondale</option>
-  			<option value="bmc">BMC</option>
-  			<option value="canyon">Canyon</option>
-  			<option value="look">Look</option>
-  			<option value="protek">Protek</option>
-  			<option value="megamo">Megamo</option>
- 			 	<option value="pinarello">Pinarello</option>
- 			 	<option value="bianchi">Bianchi</option>
- 			 	<option value="bh">BH</option>
-		 	 	<option value="factor">Factor</option>
-			  <option value="ghost">Ghost</option>
- 		 		<option value="cervelo">Cervélo</option>
-  			<option value="argon">Argon</option>
+		<fieldset class="fieldset">
+			<legend>Características de la bicicleta</legend>
+			<label for="tipo-bici">Tipo de bicicleta:</label tabindex="4">
+			<select name="tipo-bici" id="tipo-bici">
+				<option value="">Escoger</option>
+				<option value="señorial">Señorial</option>
+				<option value="anti-plebeyos">Anti-plebeyos</option>
+				<option value="por-encima-del-hombro">Por encima del hombro</option>
 			</select>
 
-			<input type="submit" value="Enviar">
-			<input type="reset" value="Restablecer">
+			<label for="montaña">Categoría montaña</label>
+			<select name="montaña" id="montaña" tabindex="5">
+				<option value="">Escoger</option>
+				<option value="gamusinos">gamusinos</option>
+				<option value="hueleflores-premium">Hueleflores premium</option>
+				<option value="fango-lover">Fango lover</option>
+			</select>
+
+			<label for="carreras">Categoría carreras</label>
+			<select name="carreras" id="carreras" tabindex="6">
+				<option value="">Escoger</option>
+				<option value="metroymedio">Metroymedio</option>
+				<option value="3-de-la-tarde-fluorescente edition">3 de la tarde. Fluorescente edition</option>
+				<option value="grupitors">Grupitors</option>
+			</select>
+
+			<label for="accesorios">Accesorios</label>
+			<select name="accesorios" id="accesorios" multiple size="2" tabindex="7">
+				<option value="ruedines">Ruedines</option>
+				<option value="egatinas">Pegatinas</option>
+				<option value="cestita">Cestita</option>
+				<option value="bombo-de-aire">Bombo de aire/option>
+				<option value="timbre">timbre</option>
+				<option value="foco">Foco</option>
+			</select>
+
+			<label for="marca">¿Qué marca era?</label>
+				<select id="marca" name="marca" tabindex="8">
+					<option value="specialized">Specialized</option>
+					<option value="trek">Trek</option>
+					<option value="merida">Merida</option>
+					<option value="scott">Scott</option>
+					<option value="giant">Giant</option>
+					<option value="cube">Cube</option>
+					<option value="lapierre">Lapierre</option>
+					<option value="orbea">Orbea</option>
+					<option value="cannondale">Cannondale</option>
+					<option value="bmc">BMC</option>
+					<option value="canyon">Canyon</option>
+					<option value="look">Look</option>
+					<option value="protek">Protek</option>
+					<option value="megamo">Megamo</option>
+					<option value="pinarello">Pinarello</option>
+					<option value="bianchi">Bianchi</option>
+					<option value="bh">BH</option>
+					<option value="factor">Factor</option>
+					<option value="ghost">Ghost</option>
+					<option value="cervelo">Cervélo</option>
+					<option value="argon">Argon</option>
+				</select>
+
+				<input type="reset" value="Restablecer">
+				<input type="submit" value="Enviar">
+		</fieldset>
   </form>
 </body>
 
 <style>
     body {
     width: 35vw;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     align-content: center;
   }
-	.form_viejuner {
+	.fieldset {
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     gap: .5rem;
-		margin: 2rem 0;
   }
+	img {
+		max-width: 100%;
+		border-radius: .8rem;
+	}
 </style>
 </html>
