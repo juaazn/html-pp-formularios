@@ -10,25 +10,25 @@
   <form action="" method="get" class="form_viejuner">
     <header><h3>Tu</h3></header>
     <label for="nombre">Nombre: </label>
-    <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus>
+    <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus required>
 
     <label for="apellidos">Apellidos: </label>
-    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido...">
+    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido..." required>
 
     <label for="edad">Edad: </label>
-    <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad">
+    <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad" required>
 
     <fieldset>
       <legend>Sexo: </legend>
-      <input type="radio" name="hombre" id="hombre" value="hombre">
+      <input type="radio" name="hombre" id="hombre" value="hombre" required>
       <label for="hombre">Hombre</label>
-      <input type="radio" name="mujer" id="mujer" value="mujer">
+      <input type="radio" name="mujer" id="mujer" value="mujer" required>
       <label for="mujer">Mujer</label>
     </fieldset>
 
     <div>
-      <label for="viejuner">Me siento viejuner:</label>
-      <input type="checkbox" name="viejuner" id="viejuner">
+      <label for="viejuner">Me siento viejuner:</label >
+      <input type="checkbox" name="viejuner" id="viejuner" required>
     </div>
 
     <label for="sobreti">Escribe algo sobre tí:</label>
@@ -36,10 +36,10 @@
 
     <h3>Tus circunstancias:</h3>
     <label for="mail">Correo electrónico:</label>
-    <input type="email" name="mail" id="mail" placeholder="Escribe tu correo aquí">
+    <input type="email" name="mail" id="mail" placeholder="Escribe tu correo aquí" required>
     
     <label for="telefono">Teléfono: </label>
-    <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono">
+    <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono" required>
 
     <input type="submit" value="Enviar">
   </form>
