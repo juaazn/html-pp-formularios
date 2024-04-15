@@ -9,7 +9,7 @@
   <h1>El Club Viejuner</h1>
   <img src="./abueletes.jpg" alt="Ubuelas con sus bicicletas">
   <form action="" method="get" class="form_viejuner">
-    <header><h3>Tu</h3></header>
+    <legend>Admisión para el club</legend>
     <label for="nombre">Nombre: </label>
     <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus required tabindex="0">
 
@@ -42,6 +42,7 @@
     <label for="telefono">Teléfono: </label>
     <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono" required tabindex="8">
 
+    <input type="reset" value="Restablecer">
     <input type="submit" value="Enviar" tabindex="9">
   </form>
 </body>
@@ -49,7 +50,7 @@
 <style>
   body {
     width: 35vw;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     align-content: center;
   }
@@ -67,6 +68,7 @@
   }
   img {
     max-width: 100%;
+    border-radius: .8rem;
   }
 </style>
 </html>
