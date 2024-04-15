@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los ladrones de bicicletas</title>
+</head>
+<body>
+	<h1>Los ladronzuelos de bicicletas</h1>
+	<form class="form_viejuner" action="" method="get">
+		<label for="fecha">Día: </label>
+		<input type="date" name="fecha" id="fecha">
+
+		<label for="hora">Hora:</label>
+		<input type="time" name="hora" id="hora">
+
+		<label for="color_bici">Color de la bicicleta:</label>
+		<input type="color" name="color" id="color_bici">
+
+		<label for="rango_precio">Rango de precio:</label>
+		<input type="range" name="rango_precio" id="rango_precio">
+
+		<label for="tipo-bici">Tipo de bicicleta:</label>
+		<select name="tipo-bici" id="tipo-bici">
+			<option value="">Escoger</option>
+			<option value="señorial">Señorial</option>
+			<option value="anti-plebeyos">Anti-plebeyos</option>
+			<option value="por-encima-del-hombro">Por encima del hombro</option>
+		</select>
+
+		<label for="montaña">Categoría montaña</label>
+		<select name="montaña" id="montaña">
+			<option value="">Escoger</option>
+			<option value="gamusinos">gamusinos</option>
+			<option value="hueleflores-premium">Hueleflores premium</option>
+			<option value="fango-lover">Fango lover</option>
+		</select>
+
+		<label for="carreras">Categoría carreras</label>
+		<select name="carreras" id="carreras">
+			<option value="">Escoger</option>
+			<option value="metroymedio">Metroymedio</option>
+			<option value="3-de-la-tarde-fluorescente edition">3 de la tarde. Fluorescente edition</option>
+			<option value="grupitors">Grupitors</option>
+		</select>
+
+		<label for="accesorios">Accesorios</label>
+		<select name="accesorios" id="accesorios" multiple size="2">
+			<option value="ruedines">Ruedines</option>
+			<option value="egatinas">Pegatinas</option>
+			<option value="cestita">Cestita</option>
+			<option value="bombo-de-aire">Bombo de aire/option>
+			<option value="timbre">timbre</option>
+			<option value="foco">Foco</option>
+		</select>
+
+		<label for="marca">¿Qué marca era?</label>
+			<select id="marca" name="marca">
+  			<option value="specialized">Specialized</option>
+  			<option value="trek">Trek</option>
+  			<option value="merida">Merida</option>
+  			<option value="scott">Scott</option>
+  			<option value="giant">Giant</option>
+				<option value="cube">Cube</option>
+  			<option value="lapierre">Lapierre</option>
+  			<option value="orbea">Orbea</option>
+  			<option value="cannondale">Cannondale</option>
+  			<option value="bmc">BMC</option>
+  			<option value="canyon">Canyon</option>
+  			<option value="look">Look</option>
+  			<option value="protek">Protek</option>
+  			<option value="megamo">Megamo</option>
+ 			 	<option value="pinarello">Pinarello</option>
+ 			 	<option value="bianchi">Bianchi</option>
+ 			 	<option value="bh">BH</option>
+		 	 	<option value="factor">Factor</option>
+			  <option value="ghost">Ghost</option>
+ 		 		<option value="cervelo">Cervélo</option>
+  			<option value="argon">Argon</option>
+			</select>
+  </form>
+</body>
+
+<style>
+    body {
+    width: 35vw;
+    height: 100vh;
+    margin: 0 auto;
+    align-content: center;
+  }
+	.form_viejuner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+		margin: 2rem 0;
+  }
+</style>
+</html>
