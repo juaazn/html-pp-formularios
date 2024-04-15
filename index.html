@@ -9,33 +9,34 @@
   <h1>El Club Viejuner</h1>
   <img src="./abueletes.jpg" alt="Ubuelas con sus bicicletas">
   <form action="" method="get" class="form_viejuner">
-    <legend>Admisión para el club</legend>
-    <label for="nombre">Nombre: </label>
-    <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus required tabindex="0">
+    <fieldset class="fieldset">
+      <legend>Admisión para el club</legend>
+      <label for="nombre">Nombre: </label>
+      <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus required tabindex="0">
 
-    <label for="apellidos">Apellidos: </label>
-    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido..." required tabindex="1">
+      <label for="apellidos">Apellidos: </label>
+      <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido..." required tabindex="1">
 
-    <label for="edad">Edad: </label>
-    <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad" required tabindex="2">
+      <label for="edad">Edad: </label>
+      <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad" required tabindex="2">
 
-    <fieldset>
-      <legend>Sexo: </legend>
-      <input type="radio" name="hombre" id="hombre" value="hombre" required tabindex="3">
-      <label for="hombre">Hombre</label>
-      <input type="radio" name="mujer" id="mujer" value="mujer" required tabindex="4">
-      <label for="mujer">Mujer</label>
-    </fieldset>
+      <div>
+        <label for="sexo">Sexo</label>
+        <input type="radio" name="hombre" id="sexo" value="hombre" required tabindex="3">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="mujer" id="sexo" value="mujer" required tabindex="4">
+        <label for="mujer">Mujer</label>
+      </div>
+      <div>
+        <label for="viejuner">Me siento viejuner:</label >
+        <input type="checkbox" name="viejuner" id="viejuner" required tabindex="5">
+      </div>
 
-    <div>
-      <label for="viejuner">Me siento viejuner:</label >
-      <input type="checkbox" name="viejuner" id="viejuner" required tabindex="5">
-    </div>
-
-    <label for="sobreti">Escribe algo sobre tí:</label>
-    <textarea name="sobreti" id="sobreti" placeholder="Escribenos algo de tí" tabindex="6" class="sobreti"></textarea>
-
-    <h3>Tus circunstancias:</h3>
+      <label for="sobreti">Escribe algo sobre tí:</label>
+      <textarea name="sobreti" id="sobreti" placeholder="Escribenos algo de tí" tabindex="6" class="sobreti"></textarea>
+  </fieldset>
+  <fieldset class="fieldset">
+    <legend>Tus circunstancias</legend>
     <label for="mail">Correo electrónico:</label>
     <input type="email" name="mail" id="mail" placeholder="Escribe tu correo aquí" required tabindex="7">
     
@@ -44,6 +45,7 @@
 
     <input type="reset" value="Restablecer">
     <input type="submit" value="Enviar" tabindex="9">
+  </fieldset>
   </form>
 </body>
 
@@ -54,7 +56,7 @@
     margin: 0 auto;
     align-content: center;
   }
-  .form_viejuner {
+  .fieldset {
     width: 100%;
     height: auto;
     display: flex;
