@@ -7,41 +7,42 @@
 </head>
 <body>
   <h1>El Club Viejuner</h1>
+  <img src="./abueletes.jpg" alt="Ubuelas con sus bicicletas">
   <form action="" method="get" class="form_viejuner">
     <header><h3>Tu</h3></header>
     <label for="nombre">Nombre: </label>
-    <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus required>
+    <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre..." autofocus required tabindex="0">
 
     <label for="apellidos">Apellidos: </label>
-    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido..." required>
+    <input type="text" name="apellidos" id="apellidos" placeholder="Escribe aquí tu apellido..." required tabindex="1">
 
     <label for="edad">Edad: </label>
-    <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad" required>
+    <input type="number" name="edad" id="edad" placeholder="Escribe aquí tu edad" required tabindex="2">
 
     <fieldset>
       <legend>Sexo: </legend>
-      <input type="radio" name="hombre" id="hombre" value="hombre" required>
+      <input type="radio" name="hombre" id="hombre" value="hombre" required tabindex="3">
       <label for="hombre">Hombre</label>
-      <input type="radio" name="mujer" id="mujer" value="mujer" required>
+      <input type="radio" name="mujer" id="mujer" value="mujer" required tabindex="4">
       <label for="mujer">Mujer</label>
     </fieldset>
 
     <div>
       <label for="viejuner">Me siento viejuner:</label >
-      <input type="checkbox" name="viejuner" id="viejuner" required>
+      <input type="checkbox" name="viejuner" id="viejuner" required tabindex="5">
     </div>
 
     <label for="sobreti">Escribe algo sobre tí:</label>
-    <textarea name="sobreti" id="sobreti" placeholder="Escribenos algo de tí" class="sobreti"></textarea>
+    <textarea name="sobreti" id="sobreti" placeholder="Escribenos algo de tí" tabindex="6" class="sobreti"></textarea>
 
     <h3>Tus circunstancias:</h3>
     <label for="mail">Correo electrónico:</label>
-    <input type="email" name="mail" id="mail" placeholder="Escribe tu correo aquí" required>
+    <input type="email" name="mail" id="mail" placeholder="Escribe tu correo aquí" required tabindex="7">
     
     <label for="telefono">Teléfono: </label>
-    <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono" required>
+    <input type="tel" name="telefono" id="telefono" placeholder="Número de teléfono" required tabindex="8">
 
-    <input type="submit" value="Enviar">
+    <input type="submit" value="Enviar" tabindex="9">
   </form>
 </body>
 
@@ -63,6 +64,9 @@
     resize: vertical;
     width: auto;
     min-height: 5.25rem;
+  }
+  img {
+    max-width: 100%;
   }
 </style>
 </html>
